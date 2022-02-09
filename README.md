@@ -2,7 +2,9 @@
 
 A recipe website built with Next.js. Api from spoonacular.
 
-#Instructions
+Deployed Site: https://recipe-search-shareef.netlify.app/
+
+## Instructions
 
 - Make sure you have NodeJS latest version installed.
 - Open your workspace and preferred IDE.
