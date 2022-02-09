@@ -1,6 +1,9 @@
+//import modules
+
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { green, purple } from "@mui/material/colors";
 
+//assigning theme styling
 const theme = responsiveFontSizes(
   createTheme({
     palette: {

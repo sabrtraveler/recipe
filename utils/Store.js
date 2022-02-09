@@ -1,7 +1,12 @@
+//import modules
+
 import { createContext, useReducer } from "react";
 import Cookies from "js-cookie";
 
+//export Store 
 export const Store = createContext();
+
+//this page is all regarding storing data such as: favorites
 
 const initialState = {
   favorites: Cookies.get("favorites")

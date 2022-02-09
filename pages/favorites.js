@@ -1,3 +1,5 @@
+//import modules
+
 import React, { useContext } from "react";
 import {
   List,
@@ -17,6 +19,8 @@ import Layout from "../components/Layout";
 import TopBar from "../components/TopBar";
 import FavoriteButton from "../components/FavoriteButton";
 
+
+//assigning favorites function /design and styling
 const Favorites = () => {
   const { state } = useContext(Store);
   const { favorites } = state;

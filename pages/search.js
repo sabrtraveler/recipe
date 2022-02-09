@@ -1,3 +1,5 @@
+//import modules
+
 import React from "react";
 import { useRouter } from "next/router";
 import axios from "axios";
@@ -21,6 +23,8 @@ import {
 import Layout from "../components/Layout";
 import TopBar from "../components/TopBar";
 
+
+//Search page function
 const SearchPage = ({ data, page }) => {
   const router = useRouter();
   const { query } = router;
@@ -34,7 +38,7 @@ const SearchPage = ({ data, page }) => {
       },
     });
   };
-
+//search filters
   const Filters = () => {
     const filterObj = { ...query };
     delete filterObj.query;
@@ -171,6 +175,8 @@ const SearchPage = ({ data, page }) => {
     </Layout>
   );
 };
+
+//export Searchpage function
 
 export default SearchPage;
 

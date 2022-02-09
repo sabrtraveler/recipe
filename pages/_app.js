@@ -1,3 +1,5 @@
+//import modules
+
 import "../styles/globals.css";
 import { StoreProvider } from "../utils/Store";
 

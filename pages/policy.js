@@ -1,9 +1,13 @@
+//import module
+
 import React from "react";
 import { useRouter } from "next/router";
 import { Typography, Grid, Container, Box } from "@mui/material";
 import Layout from "../components/Layout";
 import TopBar from "../components/TopBar";
 
+
+//assigning policy page function /style and structure
 const PolicyPage = () => {
   const router = useRouter();
 

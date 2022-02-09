@@ -1,3 +1,5 @@
+//import modules
+
 import React from "react";
 import {
   List,
@@ -19,6 +21,7 @@ import SearchBar from "../components/SearchBar";
 import TopBar from "../components/TopBar";
 import CookieBanner from "../components/CookieBanner";
 
+//index.html /home page function styling and design i.e cookie banner, top bar, etc.
 const Index = () => {
   return (
     <Layout>

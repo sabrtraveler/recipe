@@ -1,3 +1,5 @@
+//Category assigning object arrays
+
 const categories = {
   type: [
     "Main Course",

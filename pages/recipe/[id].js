@@ -1,3 +1,5 @@
+//import modules
+
 import React from "react";
 import {
   List,
@@ -13,6 +15,8 @@ import Image from "next/image";
 import FavoriteButton from "../../components/FavoriteButton";
 import Layout from "../../components/Layout";
 import TopBar from "../../components/TopBar";
+
+//Assigning Recipe function /design and styling
 
 const Recipe = ({ data }) => {
   return (
@@ -77,6 +81,8 @@ const Recipe = ({ data }) => {
     </Layout>
   );
 };
+
+//export recipe 
 
 export default Recipe;
 
