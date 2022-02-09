@@ -1,9 +1,13 @@
+// import modules
+
 import React, { useContext, useEffect, useState } from "react";
 import { Button, Typography } from "@mui/material";
 import { Store } from "../utils/Store";
 import TrashIcon from "@mui/icons-material/Delete";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+
+//export favorite button
 
 export default function FavoriteButton({ id, title, icon }) {
   const { state, dispatch } = useContext(Store);
@@ -30,7 +34,7 @@ export default function FavoriteButton({ id, title, icon }) {
       payload: { id: id.toString(), title },
     });
   };
-
+  //styling of favorite button
   return (
     <>
       {isAdded ? (

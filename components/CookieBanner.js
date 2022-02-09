@@ -1,3 +1,5 @@
+//import modules
+
 import React, { useContext } from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -7,6 +9,8 @@ import Typography from "@mui/material/Typography";
 import { Store } from "../utils/Store";
 import { useRouter } from "next/router";
 
+//export cookie banner
+
 export default function CookieBanner() {
   const { state, dispatch } = useContext(Store);
   const { cookiesBool } = state;
@@ -15,6 +19,8 @@ export default function CookieBanner() {
   const handleAccept = () => {
     dispatch({ type: "ACCEPT_COOKIES" });
   };
+
+//styling & cookie disclaimer
 
   return (
     <Card
@@ -28,7 +34,7 @@ export default function CookieBanner() {
     >
       <CardContent>
         <Typography color="primary.dark">
-          Recipe Book uses cookies to improve your experience, according to the
+          Recipe Search uses cookies to improve your experience, according to the
           Privacy Policy. <br /> By continuing to browse you agree to these
           conditions.
         </Typography>

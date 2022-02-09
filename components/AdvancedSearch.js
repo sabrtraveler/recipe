@@ -1,3 +1,5 @@
+//import modules
+
 import React, { useContext, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { Store } from "../utils/Store";
@@ -23,6 +25,8 @@ import ConfigIcon from "@mui/icons-material/Settings";
 import CloseIcon from "@mui/icons-material/Close";
 import categories from "../utils/categories";
 
+//export AdvancedSearch function
+
 export default function AdvancedSearch() {
   const { state, dispatch } = useContext(Store);
   const { search } = state;
@@ -38,6 +42,8 @@ export default function AdvancedSearch() {
     setOpen(true);
   };
 
+  //function to handle close
+
   const handleClose = () => {
     setOpen(false);
     dispatch({
@@ -45,6 +51,8 @@ export default function AdvancedSearch() {
       payload: { type, cuisine, intolerances, diet },
     });
   };
+
+  //function to handle Submit
 
   const handleSubmit = () => {
     dispatch({
@@ -65,12 +73,16 @@ export default function AdvancedSearch() {
     setOpen(false);
   };
 
+  //function to handle cuisine change
+
   const handleCuisineChange = (v) => {
     const value = v.target.value;
     cuisine.includes(value)
       ? setCuisine(cuisine.filter((item) => item !== value))
       : setCuisine([...cuisine, value]);
   };
+
+  //function to handle intolerance change
 
   const handleIntolerancesChange = (v) => {
     const value = v.target.value;
@@ -79,6 +91,9 @@ export default function AdvancedSearch() {
       : setIntolerances([...intolerances, value]);
   };
 
+
+  //style of Advanced Search
+  
   const style = {
     maxHeight: "100%",
     maxWidth: 800,

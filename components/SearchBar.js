@@ -1,3 +1,5 @@
+//import modules
+
 import React, { useState, useContext, useEffect } from "react";
 import { useRouter } from "next/router";
 import { Store } from "../utils/Store";
@@ -11,17 +13,22 @@ import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import AdvancedSearch from "./AdvancedSearch";
 
+
+//export SearchBar function
+
 export default function SearchBar() {
   const router = useRouter();
   const { state, dispatch } = useContext(Store);
   const { search } = state;
   const [input, setInput] = useState(search.query ? search.query : "");
 
+  //submit Handler function
   const submitHandler = (e) => {
     e.preventDefault();
     if (input !== "") {
       dispatch({ type: "ADD_SEARCH", payload: { query: input } });
-
+  
+  // the advanced search function
       const advSearch = {
         type: search.type,
         cuisine: search.cuisine.join(","),

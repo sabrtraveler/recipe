@@ -1,7 +1,11 @@
+//import modules
+
 import React from "react";
 import { Grid, Box, Typography, Link } from "@mui/material";
 import NextLink from "next/link";
 import Image from "next/image";
+
+//food categories with appropriate image
 
 const categories = [
   { type: "Dessert", img: "/images/categories/cookies.jpg" },
@@ -16,6 +20,8 @@ const categories = [
   { type: "Bread", img: "/images/categories/bread.jpg" },
   { type: "Soup", img: "/images/categories/soup.jpg" },
 ];
+
+//export Categories button function
 
 export default function CategoriesButton() {
   return (

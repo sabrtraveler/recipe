@@ -1,3 +1,5 @@
+//import modules 
+
 import React, { useContext } from "react";
 import Store from "../utils/Store";
 import { styled, alpha } from "@mui/material/styles";
@@ -15,6 +17,8 @@ import StarIcon from "@mui/icons-material/Star";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import NextLink from "next/link";
 import SearchBar from "../components/SearchBar";
+
+//export Top Header Bar function
 
 export default function TopBar({ nosearch }) {
   const [anchorEl, setAnchorEl] = React.useState(null);

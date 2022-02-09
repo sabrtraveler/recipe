@@ -1,6 +1,10 @@
+//import modules
+
 import React from "react";
 import { Grid, Box, Link, Typography } from "@mui/material";
 import NextLink from "next/link";
+
+//export Popular Recipe Cards function
 
 export default function PopularCard() {
   return (

@@ -1,6 +1,9 @@
+//import modules
+
 import React from "react";
 import Link from "@mui/material/Link";
 
+// styling for MyLink
 const defaultSx = {
   color: "primary.dark",
   cursor: "pointer",

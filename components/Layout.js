@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-page-custom-font */
+/* eslint-disable @next/next/no-page-custom-font / ESLint - is a very convenient tool to control code quality. But, sometimes it’s necessary to disable it.*/ 
 import React, { useContext } from "react";
 import { useRouter } from "next/router";
 import { Store } from "../utils/Store";
@@ -18,6 +18,8 @@ import theme from "../utils/theme";
 import NextLink from "next/link";
 import MyLink from "../components/MyLink";
 
+//assign food tags
+
 const tags = [
   "Main course",
   "Side Dish",
@@ -34,6 +36,8 @@ const tags = [
   "Snack",
   "Drink",
 ];
+
+//export layout function/fonts
 
 export default function Layout({ children, title, sx }) {
   return (
