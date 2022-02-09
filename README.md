@@ -15,5 +15,5 @@ This is a recipe website built with Next.js and powered by the Spoonacular API.
 
 ## Screenshots:
 
-<img src="./public/images/1" style="width: 50%; max-width: 50%;">
-  <img src="./assets/images/2.png" style="width: 50%; max-width: 50%;">
+![Homepage](/screenshots/Screenshot_1.jpg)
+![Categories](/screenshots/Screenshot_2.jpg)
