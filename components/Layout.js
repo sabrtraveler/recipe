@@ -97,7 +97,7 @@ export default function Layout({ children, title, sx }) {
                         textAlign: { xs: "center", md: "start" },
                       }}
                     >
-                      Recipe Book
+                      Recipe Search
                     </Typography>
                   </ListItem>
                   <ListItem

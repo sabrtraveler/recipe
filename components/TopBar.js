@@ -114,7 +114,7 @@ export default function TopBar({ nosearch }) {
                   lineHeight: 0.8,
                 }}
               >
-                Recipe Book
+                Recipe Search
               </Typography>
             </Link>
           </NextLink>
